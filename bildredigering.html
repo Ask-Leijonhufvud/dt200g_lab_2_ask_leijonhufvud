@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bildredigering</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <!--faviconer-->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <!-- logotyp -->
+      <img src="./assets/logo.svg" alt="" />
+      <!-- meny -->
+      <nav>
+        <a href="./"><div>Startsida</div></a>
+        <div>Bildredigering</div>
+        <a href="./about.html"><div>Om mig</div></a>
+      </nav>
+    </header>
+    <main id="bildredigering">
+      <h1>Bildredigering</h1>
+      <!-- tre sektioner med: titel (h2); redigerad och oredigerad bild brevid varandra (figure); textförklaring -->
+      <section>
+        <h2>Borttagning av objekt</h2>
+        <figure>
+          <img
+            src="./assets/originals/bilserie014.jpg"
+            alt="en byggnad, himmlen är grön, ett finger syns i vänsterkanten"
+            loading="lazy"
+          />
+          <img
+            src="./assets/bildserie014.jpg"
+            alt="samma foto men himmlen är blå och fingret har tagits bort"
+          />
+          <figcaption>
+            Två versioner av samma fotografi, i den högra har fingret tagits
+            bort och färgerna har justerats.
+          </figcaption>
+        </figure>
+        <p>
+          Jag arbetade i GIMP och började med att ta bort fingret, huvudsakligen
+          med hjälp av fuzzy select. Sedan använde jag clone-verktyget för att
+          fylla i hålrummet och sist använde jag heal-verktyget för att fixa
+          artefakter från kloningen. Sedan lade jag på ett filter för att skifta
+          färgen på himmlen, jag fick lite problem för när jag skalade ner
+          bilden för att exportera ändrades inte arean som filtret påverkade.
+          Sist justerade jag bilden så att den skulle passa in, jage hade lite
+          problem med att få filtren att appliceras på både lagret med själva
+          bilden och lagret som jag använde heal-verktyget på så jag slog ihop
+          dem. Jag justerade vitbalansen, sänkte ljusnivån och justerade
+          färgtempraturen för att få bilden mer naturlig, mörkare och lite
+          blåare.
+        </p>
+      </section>
+      <section>
+        <h2>Färgläggning av objekt</h2>
+        <figure>
+          <img
+            src="./assets/originals/bilserie012.jpg"
+            alt="svartvit, en hund ligger på ett golv, dess huvud syns"
+            loading="lazy"
+          />
+          <img
+            src="./assets/bildserie012.jpg"
+            alt="samma bild, hunden har blivigt färglaggd"
+          />
+          <figcaption>
+            Två versioner av samma svartvita fotografi, i det hägra har hunden
+            blivigt färglaggd.
+          </figcaption>
+        </figure>
+        <p>
+          Jag arbetade i GIMP. Vid mitt första försök märkte jag först ut
+          hundhuvudet och färglade det och skalade sedan om bilden till den
+          storlek jag ville ha. Det var då jag påmindes om vad jag redan
+          upptäckt, att arean som ett filter påverkar inte skalas om när bilden
+          gör det. Vid mitt andra försök började jag med att skala om bilden
+          till den storlek jag ville ha och märkte sedan ut hundhuvudet. Av
+          okänd anledning kunde jag inte markera de översta c. 20 pixlarna, så
+          de färglades inte och skars därför bort ur bilden. Sist sänkte jag
+          ljusnivån för att bilden skulle passa in bättre.
+        </p>
+      </section>
+      <section>
+        <h2>Kontrast</h2>
+        <figure>
+          <img
+            src="./assets/originals/bilserie017.jpg"
+            alt="ett vattendrag som går igenom skogsbeklädda berg, en person står på ett ben vänd bort från kameran, de står på en sten i vattendraget och ser ut att vara vid kanten av ett vattenfall som de är vända mor"
+            loading="lazy"
+          />
+          <img
+            src="./assets/bildserie017.jpg"
+            alt="samma bild, men mörkare och med lägre kontrast"
+          />
+          <figcaption>
+            Två versioner av samma bild, den högra har redigerats så den är
+            mörkare och har lägre kontrast.
+          </figcaption>
+        </figure>
+        <p>
+          Jag arbetade i GIMP och började med att skala om bilden till den
+          storlek jag ville ha. Sedan sänkte jag kontrasten för jag ville få en
+          lugnare känsla, den sänkta kontrasten gjorde att bilden blev "immig"
+          så jag valde att sänka exponeringen. Sedan justerade jag nivåerna på
+          dessa filter tills jag fick en bild jag var mer-eller-mindre nöjd med.
+          Sist justerade jag färgtempraturen för att få tillbaka de blåa tonerna
+          som jag ahde förlorat men villa ha.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <!-- logotyp -->
+      <img src="./assets/logo.svg" alt="" />
+      <!-- navigeringslänkar -->
+      <nav>
+        <ul>
+          <li><a href="./">Startsida</a></li>
+          <li><a href="./bildredigering.html">Bildredigering</a></li>
+          <li><a href="./about.html">Om mig</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
