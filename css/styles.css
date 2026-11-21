@@ -87,6 +87,9 @@ footer {
 footer img {
     height: 64px;
 }
+footer nav {
+    line-height: 1.6;
+}
 @media (min-width: 400px) {
     footer {
         flex-direction: row;
