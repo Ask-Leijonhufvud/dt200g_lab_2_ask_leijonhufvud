@@ -22,12 +22,28 @@
     </header>
     <main>
       <h1>Om mig</h1>
-      <img
-        src="./assets/portrait.png"
-        alt="Frilaggd porträttbild av Ask"
-        width="500"
-        height="467"
-      />
+      <picture id="portrait">
+        <source
+          media="(min-width: 500px)"
+          srcset="./assets/portrait_500.webp"
+          type="image/webp"
+        />
+        <source
+          srcset="./assets/portrait_300.webp"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 500px)"
+          srcset="./assets/portrait_500.png"
+          type="image/png"
+        />
+        <img
+          src="./assets/portrait_300.png"
+          height="280"
+          width="300"
+          alt="Frilaggd porträttbild av Ask"
+        />
+      </picture>
       <p>
         Hej! Jag heter Ask och bor i Östersund. Jag läste teknikvetenskap på JGY
         Wargentin och läste då två valfria programmeringskurser, jag började
