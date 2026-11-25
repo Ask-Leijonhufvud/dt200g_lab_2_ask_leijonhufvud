@@ -35,12 +35,26 @@
             height="400"
           />
         </picture>
-        <img
-          src="./assets/bildserie012.jpg"
-          alt="svartvit, ett hundhuvud som blivigt färglaggt"
-          width="533"
-          height="380"
-        />
+        <picture>
+          <source
+            media="(min-width: 533px)"
+            srcset="./assets/bildserie012_533.webp"
+            type="image/webp"
+          />
+          <source srcset="./assets/bildserie012_300.webp" type="image/webp" />
+          <source
+            media="(min-width: 533px)"
+            srcset="./assets/bildserie012_533.jpg"
+            type="image/jpg"
+          />
+          <img
+            class="image12"
+            src="./assets/bildserie012_300.jpg"
+            alt="svartvit, ett hundhuvud som blivigt färglaggt"
+            width="300"
+            height="214"
+          />
+        </picture>
         <picture>
           <source srcset="./assets/bildserie017.webp" type="image/webp" />
           <img

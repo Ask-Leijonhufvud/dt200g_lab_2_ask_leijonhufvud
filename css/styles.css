@@ -129,3 +129,11 @@ p, h1 {
         width: 500px;
     }
 }
+
+/* image 012 */
+@media (min-width: 533px) {
+    img.image12 {
+        width: 533px;
+        height: 380px;
+    }
+}
