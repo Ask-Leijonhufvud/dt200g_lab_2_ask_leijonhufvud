@@ -22,7 +22,28 @@
     </header>
     <main>
       <!-- Header-bild -->
-      <img src="./assets/header.png" alt="" id="header" />
+      <picture>
+        <source
+          srcset="
+            ./assets/header_300.webp   300w,
+            ./assets/header_500.webp   500w,
+            ./assets/header_1000.webp 1000w,
+            ./assets/header_2000.webp 2000w
+          "
+          type="image/webp"
+        />
+        <img
+          id="header"
+          alt=""
+          srcset="
+            ./assets/header_300.png   300w,
+            ./assets/header_500.png   500w,
+            ./assets/header_1000.png 1000w,
+            ./assets/header_2000.png 2000w
+          "
+          src="./assets/header_500.png"
+        />
+      </picture>
       <!-- Bildspel: img i flex -->
       <!-- 11, 12, 14, 17 -->
       <div id="bildspel">
