@@ -1,8 +1,8 @@
 # DT200G Laboration 2 - Analysera och optimera webbplats
 
-[GitHub Pages]()
+[GitHub Pages](https://ask-leijonhufvud.github.io/dt200g_lab_2_ask_leijonhufvud/)
 
-[Presentation]()
+[Presentation](https://ask-leijonhufvud.github.io/dt200g_lab_2_ask_leijonhufvud/video.html)
 
 Detta var en universitetsuppgift med syftet att:
 > * Kunna förstå och analysera webbplatsers uppbyggnad.
